@@ -8,6 +8,6 @@ def homepage():
     if request.method == "GET":
         return jsonify({"message": "Hello World!"})
 
-PORT = int(os.environ.get("PORT", 8080))
+PORT = int(os.environ.get("PORT", 6000))
 if __name__ == '__main__':
     app.run(threaded=True,host='0.0.0.0',port=PORT)
